@@ -82,19 +82,53 @@ Answer: student.courseLoad[0]
 
 **- A: ‘3’ + 2**
 
+Answer: 32. 
+
+Since integers map to their exact string representation. String + with integer = String
+
 **- B: ‘3’ - 2**
+
+Answer: 1. 
+
+When String - integer, the minus will convert the string to integer.
 
 **- C: 3 + null**
 
+Answer: 3. 
+
+**null** means nothing, so it represents 0. 
+
+3 + 0 = 3
+
 **- D: ‘3’ + null**
+
+Answer: 3null. 
+
+Again, since integers map to their exact string representation. String + with integer = String
 
 **- E: true + 3**
 
+Answer: 4. 
+
+**true** becomes 1, so 1 + 3 = 4.
+
 **- F: false + null**
+
+Answer: 0. 
+
+Both false and null represent 0, so add together will get 0.
 
 **- G: '3' + undefined**
 
+Answer: 3undefined. 
+
+Again, since integers map to their exact string representation. String + with integer = String
+
 **- H: '3' - undefined**
+
+Answer: NAN. 
+
+'3' converts to integer, but undefined does not have value, so it will output **NAN** in this case.
 
 ----------------------------
 
@@ -102,20 +136,50 @@ Answer: student.courseLoad[0]
 
 **- A: ‘2’ > 1**
 
+Answer: true.
+
+The string will convert to integer to make the comparison.
+
 **- B: ‘2’ < ‘12’**
+
+Answer: false.
+
+When two stings compare together, we break down the string and compare from first character. In this case, '2' should > '1'.
 
 **- C: 2 == ‘2’**
 
+Answer: true.
+
+The string will convert to integer to make the comparison. 
+
+2 = 2.
+
 **- D: 2 === ‘2’**
+
+Answer: false.
+
+The types between these two variables are different.
 
 **- E: true == 2**
 
+Answer: false.
+
+true will be equals to 1. Therefore, 1 is not equals to 2.
+
 **- F: true === Boolean(2)**
+
+Answer: true.
+
+Same type between true and Boolean(2).
 
 -----------------------------
 **15. Explain the difference between the == and === operators.**
 
-Answer:
+Answer: 
+
+**==** is focusing on the comparison of variable larger, equal, or smaller. 
+
+However, **===** is the special operation that checking the variable type between 2 comparision objects are smae type or not.
 
 **16. Given the above Object, write a for...in loop that will iterate through it and print out the value of the property if the property starts with the letter r, or if the value of that property is an odd number.  (This should be in a JS file part2-question16.js)**
 
