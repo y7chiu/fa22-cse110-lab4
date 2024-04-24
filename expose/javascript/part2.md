@@ -193,6 +193,8 @@ The answer will get **[2, 4, 6]** if we output the function call. Look at the fu
 
 **18. The above program only prints out the time once when executed. Modify this code such that the program prints out the time every second.  (This should be a JS file - part2-question18.js)**
 
+[Answer](https://github.com/y7chiu/fa22-cse110-lab4/blob/main/expose/javascript/part2-question18.js)
+
 **19. What is the output of the above code? (This should be in your part2.md)**
 
 Answer:
