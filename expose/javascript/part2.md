@@ -196,3 +196,13 @@ The answer will get **[2, 4, 6]** if we output the function call. Look at the fu
 **19. What is the output of the above code? (This should be in your part2.md)**
 
 Answer:
+
+**1**
+
+**4**
+
+**3**
+
+**2**
+
+
