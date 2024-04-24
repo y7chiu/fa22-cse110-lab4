@@ -187,7 +187,9 @@ However, **===** is the special operation that checking the variable type betwee
 
 **17. If the function above is called with the following parameters modifyArray([1,2,3], doSomething), what will be the result? Briefly walk through how you arrived at that result. (This should be in your part2.md). Here we are passing in a function as a parameter, however we can also return a function from another function just as easily, you're encouraged to play around with callbacks as they are used heavily in frontend JS development.**
 
-Answer:
+Answer: 
+
+The answer will get **[2, 4, 6]** if we output the function call. Look at the function call of modifyArray([1,2,3], doSomething). doSomething is the other function but get inside the modifyArray function as parameter. And then in the function, it does the for loop to go through whole array, which is **[1, 2, 3]**. Then in each iteration, newArr pushes the number in Array bying operating the callback function. In this case, it is the doSomething function. The number doubles when getting into the function. Therefore, the result will get **[2, 4, 6]**.
 
 **18. The above program only prints out the time once when executed. Modify this code such that the program prints out the time every second.  (This should be a JS file - part2-question18.js)**
 
